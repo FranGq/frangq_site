@@ -5,7 +5,7 @@
     margin: 0;
 }
 
-.container{
+.contain{
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -30,26 +30,18 @@
     "footer footer footer footer";
 }
 
-header{
-    display: grid;
-    grid-area: header;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+.navBg{
     background-color: #333333;
-    padding: 2rem;
-    margin-top: 0px;
-    position: sticky;
-    top: 0px;
 }
 
 ul li{
     list-style-type: none;
 }
 
-.navbar{
+/* .navbar{
     display: flex;
     justify-content: end;
-}
+} */
 
 .navbar li{
     margin: 5px 10px;
@@ -59,7 +51,7 @@ nav ul li a:hover {
     color: #fb9517;
 }
 
-nav ul li a{
+.navText{
     text-decoration: none;
     color: aliceblue;
     font-family: 'Montserrat', sans-serif;
@@ -130,6 +122,15 @@ p{
     "hola hola hola hola";
 }
 
+.coverProyectos{
+    background-color: bisque;
+    padding: 24px 8px;
+}
+
+.car{
+    padding: 0% 8%;
+}
+
 .hola{
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -145,6 +146,12 @@ p{
     padding-bottom: 40px;
     flex-direction: column;
     grid-area: principal;
+}
+
+.but{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 56px 40px 0px;
 }
 
 button{
@@ -318,16 +325,16 @@ footer h3{
     display: flex;
 }
 
-.mainProyectos{
+/* .mainProyectos{
     display: grid;
     grid-area: main;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
     "hola hola hola hola";
-}
+} */
 
-.miniGrid{
+/* .miniGrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -335,7 +342,7 @@ footer h3{
     justify-items: center;
     align-items: center;
     padding: 16px 16px 16px 16px;
-}
+} */
 
 .miniTemplates{
     width: 200px;
@@ -482,14 +489,20 @@ section article{
     padding: 16px;
 }
 
+.form{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 0px 56px 56px 56px;
+}
+
 .shadow {
     -moz-box-shadow:    3px 3px 40px 6px #553f1100;
     -webkit-box-shadow: 3px 3px 40px 6px #553f1100;
     box-shadow:         3px 3px 40px 6px #553f1100;
 }
 
-@media only screen and (max-width:320px){
-    .container{
+@media only screen and (max-width:576px){
+    .contain{
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 1fr 2.2fr 2.2fr 2.2fr;
         grid-template-areas:
