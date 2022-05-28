@@ -1,0 +1,181 @@
+h1{
+    padding: 16px;
+    margin: 40px 0px 0px 40px;
+    font-family: $font;
+    font-size: 40px;
+    font-weight: 900;
+    color: $type1;
+}
+
+h2{
+    padding: 16px;
+    margin: 40px 0px 20px 40px;
+    font-family: $font;
+    font-size: 32px;
+    font-weight: 900;
+    color: $type2;
+}
+
+h3{
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 900;
+    color: $type2;
+}
+
+header{
+    nav{
+        ul{
+            li{
+                display: flex;
+                justify-content: end;
+            }
+        }
+    }
+}
+
+.squareColor{
+    background-color: $type1;
+}
+
+.navBg{
+    background-color: $type2;
+}
+
+ul{
+    li{
+        list-style-type: none;
+    }
+}
+
+.navBoost{
+    
+}
+
+.navbar li{
+    margin: 5px 10px;
+}
+
+.navText{
+    text-decoration: none;
+    color: $type3;
+    font-family: $font;
+    font-weight: 700;
+    position: relative;
+}
+
+nav{
+    ul{
+        li {
+            a{
+                &:hover {
+                    color: $type1;
+                }
+            }
+        }
+    }
+}
+
+nav{
+    ul{
+        li{
+            a{
+                &:before{
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    bottom: -5px;
+                    left: 0;
+                    background-color: $type1;
+                    visibility: hidden;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+nav{
+    ul{
+        li{
+            a{
+                &:hover{
+                    &:before{
+                        visibility: visible;
+                        width: 103%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+p {
+    padding: 16px;
+    margin: 8px 40px 8px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    background-color: $type2;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: $type1;
+        padding: 16px;
+        margin: 20px 0px 20px 40px;
+    }
+
+    ul{
+        li{
+            #padNone{
+                text-decoration: none;
+                color: $type3;
+                padding-left: 0px;
+            }
+        }
+    }
+
+    nav{
+        ul{
+            li{
+                #padNone{
+                    text-decoration: none;
+                    color: $type3;
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
+}
+
+.footerContact{
+    font-family: 'Montserrat', sans-serif;
+    color: $type3;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.footerText{
+    font-family: 'Montserrat', sans-serif;
+    color: $type3;
+    font-size: 16px;
+    padding-left: 16px;
+    margin: 8px 0px 20px 40px;
+    font-weight: 400;
+}
+
+.newColor{
+    color: $type3;
+}

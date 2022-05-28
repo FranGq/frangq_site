@@ -1,0 +1,21 @@
+.form{
+    font-family: $font;
+    font-weight: 500;
+    padding: 0px 56px 56px 56px;
+}
+
+.btn{
+    margin-right: 16px;
+}
+
+.btn-primary { 
+    color: $type3;
+    background-color: $buttonHover;
+    border-color: $buttonHover;
+
+    &:hover{
+        color: $type2;
+        background-color: #ffd500;
+        border-color: #ffd500;
+    }
+}

@@ -1,0 +1,152 @@
+.contain{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header header"
+    "saludo saludo saludo saludo"
+    "servicios servicios servicios servicios"
+    "proyectos proyectos proyectos proyectos"
+    "footer footer footer footer";
+}
+
+
+.saludo{
+        background-color: bisque;
+        grid-area: saludo;
+}
+
+.hola{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8px;
+    gap: 16px;
+    margin: 24px 48px 56px 48px;
+    justify-content: center;
+
+    .principal{
+        display: flex;
+        padding-bottom: 40px;
+        flex-direction: column;
+        width: 60%;
+
+        button{
+            width: fit-content;
+            background-color: $buttonOn;
+            border: none;
+            border-radius: 8px;
+            color: $type2;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-family: $font;
+            font-weight: 500;
+            margin-left: 56px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        
+            &:hover{
+                background-color: $buttonHover;
+                color: $type3;
+                transform: scale(1.1);
+                }
+        }
+    }
+
+    .fotoPrincipal{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        
+        .francesco{
+            width: 300px;
+            margin-left: 16px;
+        }
+    }
+}
+
+.servicios{
+    grid-area: servicios;
+    background-color: chocolate;
+
+    .serv{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 8px;
+        gap: 16px;
+        margin: 24px 48px 56px 48px;
+
+        .cardServicios{
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 200px;
+            background-color: $cardsOn;
+            border-radius: 8px;
+            padding: 16px;
+
+            &:hover{
+                background-color: $cardsHover;
+                color: $type3;
+                cursor: pointer;
+
+                h3{
+                    color: $type1;
+                }
+            }
+        }
+    }
+}
+
+.serviciosText{
+        font-size: 12px;
+        padding: 0px;
+        margin: 8px 8px 8px 0px;
+}
+
+.algunosProyectos{
+    grid-area: proyectos;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffd500;
+    margin-top: 0px;
+    padding-bottom: 32px;
+
+    .gridProyectos{
+        display: grid;
+        margin: 0 2%;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        gap: 15px;
+
+        .templates{
+            padding: 8px;
+            margin: 24px;
+
+            .templatesPhoto{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition-timing-function: ease-in;
+                transition-duration: 0.4s;
+
+                &:hover{
+                    transform: scale(1.1);
+                    border: 10px solid #333333
+                }
+            }
+
+            figcaption{
+                font-family: $font;
+                font-size: 12px;
+                font-weight: 900;
+                color: $type2;
+            }
+        }
+    }
+}
