@@ -21,3 +21,29 @@
         transition-duration: 0.4s;
     }
 }
+
+.serviciosBotones{
+    margin-top: 2rem;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    button{
+        margin-bottom: 1rem;
+    }
+}
+
+$servHover: (
+    ux: #43d10b,
+    brand: #670bd1,
+    arte: #d10b75,
+    web: #ee7205,
+);
+
+@each $serv, $color in $servHover {
+    .btn--#{$serv}{
+        &:hover{
+            background-color: $color;
+        }
+    }
+}

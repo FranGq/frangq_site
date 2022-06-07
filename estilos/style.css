@@ -30,7 +30,7 @@
       flex-wrap: wrap;
   padding: 8px;
   gap: 16px;
-  margin: 24px 48px 56px 48px;
+  margin: 24px 48px 48px 48px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -48,35 +48,7 @@
   width: 60%;
 }
 
-.hola .principal button {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: #ffd500;
-  border: none;
-  border-radius: 8px;
-  color: #333;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  margin-left: 56px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-}
-
-.hola .principal button:hover {
-  background-color: #fb9517;
-  color: #f0f8ff;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.hola .fotoPrincipal {
+.fotoPrincipal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,7 +58,7 @@
           align-items: center;
 }
 
-.hola .fotoPrincipal .francesco {
+.fotoPrincipal .francesco {
   width: 300px;
   margin-left: 16px;
 }
@@ -122,6 +94,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 200px;
           flex: 1 1 200px;
@@ -136,14 +111,25 @@
   cursor: pointer;
 }
 
-.servicios .serv .cardServicios:hover h3 {
+.servicios .serv .cardServicios:hover h3, .servicios .serv .cardServicios:hover footer .footerh3, footer .servicios .serv .cardServicios:hover .footerh3 {
   color: #fb9517;
 }
 
-.serviciosText {
+.serviciosText, .conoceMas {
   font-size: 12px;
   padding: 0px;
   margin: 8px 8px 8px 0px;
+}
+
+.conoceMas {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #fb9517;
+  font-style: italic;
+}
+
+.conoceMas:hover {
+  color: #ffd500;
 }
 
 .algunosProyectos {
@@ -235,6 +221,39 @@
   cursor: pointer;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
+}
+
+.serviciosBotones {
+  margin-top: 2rem;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.serviciosBotones button {
+  margin-bottom: 1rem;
+}
+
+.btn--ux:hover {
+  background-color: #43d10b;
+}
+
+.btn--brand:hover {
+  background-color: #670bd1;
+}
+
+.btn--arte:hover {
+  background-color: #d10b75;
+}
+
+.btn--web:hover {
+  background-color: #ee7205;
 }
 
 main .coverProyectos {
@@ -410,6 +429,7 @@ main .coverProyectos {
 
 .btn {
   margin-right: 16px;
+  margin-left: 8px;
 }
 
 .btn-primary {
@@ -442,7 +462,9 @@ h2 {
   color: #333;
 }
 
-h3 {
+h3, footer .footerh3 {
+  padding: 0px;
+  margin: 0px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 900;
@@ -464,6 +486,34 @@ header nav ul li {
 
 .navBg {
   background-color: #333;
+}
+
+button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #ffd500;
+  border: none;
+  border-radius: 8px;
+  color: #333;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-left: 56px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #fb9517;
+  color: #f0f8ff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 ul li {
@@ -530,8 +580,7 @@ footer {
   padding-bottom: 20px;
 }
 
-footer h3 {
-  font-family: 'Montserrat', sans-serif;
+footer .footerh3 {
   font-size: 20px;
   color: #fb9517;
   padding: 16px;
@@ -681,7 +730,7 @@ footer nav ul li #padNone {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  footer h3 {
+  footer h3, footer .footerh3 {
     padding: 8px;
     margin: 0px 0px 8px 0px;
   }
@@ -754,5 +803,11 @@ footer nav ul li #padNone {
         grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
         grid-template-areas: "pr" "pr2" "pr3" "pr4";
   }
+}
+
+.serviciosBotones {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

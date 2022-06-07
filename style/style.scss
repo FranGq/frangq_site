@@ -2,6 +2,7 @@ $font: 'Montserrat', sans-serif;
 $type1: #fb9517;
 $type2: #333;
 $type3: #f0f8ff;
+$type4: #ffd500;
 $buttonOn: #ffd500;
 $buttonHover: #fb9517;
 $cardsOn: #f0f8ff;
@@ -250,3 +251,7 @@ $cardsHover: #333;
         "pr4";
     }   
 }
+
+.serviciosBotones{
+    justify-content: center;
+    }
