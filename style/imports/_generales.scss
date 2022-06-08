@@ -19,31 +19,6 @@ h3{
     @include hs (0px, 0px, $font, 16px, 900, $type2)
 }
 
-// h1{
-//     padding: 16px;
-//     margin: 40px 0px 0px 40px;
-//     font-family: $font;
-//     font-size: 40px;
-//     font-weight: 900;
-//     color: $type1;
-// }
-
-// h2{
-//     padding: 16px;
-//     margin: 40px 0px 20px 40px;
-//     font-family: $font;
-//     font-size: 32px;
-//     font-weight: 900;
-//     color: $type2;
-// }
-
-// h3{
-//     font-family: $font;
-//     font-size: 16px;
-//     font-weight: 900;
-//     color: $type2;
-// }
-
 header{
     nav{
         ul{
@@ -61,6 +36,13 @@ header{
 
 .navBg{
     background-color: $type2;
+    width: 100%;
+}
+
+.navbar-brand{
+    margin: 0px;
+    width: 52px;
+    height: 52px;
 }
 
 button{

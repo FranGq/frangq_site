@@ -5,9 +5,16 @@
   height: 100vh;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 0.4fr 1fr 1fr 1fr;
-      grid-template-rows: 0.4fr 1fr 1fr 1fr;
+  -ms-grid-rows: 0.43fr 1fr 1fr 1fr;
+      grid-template-rows: 0.43fr 1fr 1fr 1fr;
       grid-template-areas: "header header header header" "saludo saludo saludo saludo" "servicios servicios servicios servicios" "proyectos proyectos proyectos proyectos" "footer footer footer footer";
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header;
 }
 
 .saludo {
@@ -30,7 +37,7 @@
       flex-wrap: wrap;
   padding: 8px;
   gap: 16px;
-  margin: 24px 48px 48px 48px;
+  margin: 0px 48px 48px 48px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -238,6 +245,10 @@
 
 .serviciosBotones button {
   margin-bottom: 1rem;
+}
+
+.serviciosBotones button {
+  width: 14rem;
 }
 
 .btn--ux:hover {
@@ -486,6 +497,13 @@ header nav ul li {
 
 .navBg {
   background-color: #333;
+  width: 100%;
+}
+
+.navbar-brand {
+  margin: 0px;
+  width: 52px;
+  height: 52px;
 }
 
 button {
@@ -624,60 +642,6 @@ footer nav ul li #padNone {
   margin: 0;
 }
 
-/* .navbar{
-    display: flex;
-    justify-content: end;
-} */
-/* .hola{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "principal" "fotoPrincipal";
-    background-color: bisque;
-    grid-area: hola;
-} */
-/* .templatesProyectos{
-    display: flex;
-    margin: 0px 40px 80px 40px;
-    justify-content: center;
-    flex-wrap: wrap;
-} */
-/* .mainProyectos{
-    display: grid;
-    grid-area: main;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "hola hola hola hola";
-} */
-/* .miniGrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 0px;
-    justify-items: center;
-    align-items: center;
-    padding: 16px 16px 16px 16px;
-} */
-/* .bigGrid{
-    --gap: 16px;
-    --num-cols: 4;
-    --row-height: 300px;
-    box-sizing: border-box;
-    padding: var(--gap);
-    display: grid;
-    grid-area: bigGrid;
-    grid-template-columns: repeat(var(num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap)
-}
-
-.bigGrid > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
 @media only screen and (max-width: 576px) {
   .contain {
     -ms-grid-columns: 1fr;
@@ -700,14 +664,6 @@ footer nav ul li #padNone {
     padding-bottom: 0px;
     width: 300%;
   }
-  /* .hola{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "principal"
-        "fotoPrincipal";
-        margin: 24px 48px 56px 48px;
-    } */
   .francesco {
     margin: 0px;
     padding-top: 48px;
