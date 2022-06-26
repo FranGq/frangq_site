@@ -13,20 +13,17 @@
 </head>
 
 <body>
-    <header class="sticky-top">
+    <header>
     <nav class="navbar navbar-expand-lg navbar-light navBg">
         <div class="container-fluid px-5">
             <a class="navbar-brand" href="../index.html">
-                <img src="../img/logo.svg" class="w-100" alt="logo">
+                <img src="../img/logo.svg" class="w-100" alt="Logo Francesco">
             </a>
             <button class="navbar-toggler squareColor" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="navText" href="../index.html">Inicio</a>
-            </li>
             <li class="nav-item">
                 <a class="navText" href="sobremi.html">Sobre mí</a>
             </li>
@@ -45,14 +42,12 @@
     </nav>
     </header>
 
-    <section>
-		<h1>CONTACTO</h1>
+    <section class="contactContent">
+		<h1 class="top" id="topMargin">Contacto</h1>
         <h2>Cuéntanos... ¿Qué necesitas?</h2>
-	</section>
-
-    <section>
+        <br>
         <div class="container-fluid form">
-            <div class="pb-5">
+            <div>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck">
                     <label class="form-check-label" for="gridCheck">Diseño UX</label>
@@ -69,7 +64,9 @@
                     <input class="form-check-input" type="checkbox" id="gridCheck">
                     <label class="form-check-label" for="gridCheck">Desarrollo web</label>
                 </div>
-            </div> 
+            </div>
+            <br>
+            <br>
             <form class="row g-3">
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Tu nombre</label>
@@ -88,8 +85,8 @@
                     <input type="text" class="form-control" id="inputEmail4">
                 </div>
                 <div class="col-md-2">
-                    <label for="inputEmail4" class="form-label">Teléfono</label>
-                    <input type="text" class="form-control" id="inputEmail4">
+                    <label for="phone" class="form-label">Teléfono</label>
+                    <input type="number" class="form-control" id="inputEmail4" placeholder="905 432 888" pattern="^[0-9]+"> 
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Háblanos de tu negocio o marca y cuáles son tus expectativas con nosotros</label>
@@ -109,21 +106,24 @@
     </div>    
     </section>
 
-    <footer class="footer">
+    <footer>
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/logo.svg" class="w-100" alt="Logo Francesco">
+        </a>
         <div>
             <h3 class="footerh3">Servicios</h3>
             <ul class="footerText">
                 <li>
-                    Diseño UX/UI
+                    <a id="padNone" href="servicios.html">Diseño UX/UI</a>
                 </li>
                 <li>
-                    Branding
+                    <a id="padNone" href="servicios.html">Branding</a>
                 </li>
                 <li>
-                    Dirección de arte
+                    <a id="padNone" href="servicios.html">Dirección de arte</a>
                 </li>
                 <li>
-                    Desarrollo web
+                    <a id="padNone" href="servicios.html">Desarrollo web</a>
                 </li>
             </ul>
         </div>
@@ -145,11 +145,25 @@
             </nav>
         </div>
     
-        <div>
-            <p class="footerContact">T. +51 966435749
-            francesco.gq@gmail.com
-    
-            Copyright ©2022 Fran Gq · Diseñador</p>
+        <div class="footerCont">
+            <div>
+            <p class="footerContact">
+                T. +51 966435749
+                <br>
+                francesco.gq@gmail.com
+                <br>
+                Copyright ©2022 Fran Gq · Diseñador</p>
+            </div>
+            <div class="socialNetworks">
+                <a href="https://www.facebook.com/francescogq/" target="_blank">
+                <img src="../img/facebookIcon.png" class="networkIcons" alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com/francescogq/" target="_blank">
+                <img src="../img/instagramIcon.png" class="networkIcons" alt="Instagram Icon"></a>
+                <a href="https://www.linkedin.com/in/francescogrigoletto-brandart/" target="_blank">
+                <img src="../img/linkedinIcon.png" class="networkIcons" alt="LinkedIn Icon"></a>
+                <a href="https://api.whatsapp.com/send?phone=+51966435749&text=¡Hola, necesito más información!" target="_blank">
+                <img src="../img/whatsappIcon.png" class="networkIcons" alt="WhatsApp Icon"></a>
+            </div>
         </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

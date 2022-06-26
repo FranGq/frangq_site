@@ -13,20 +13,17 @@
 </head>
 
 <body>
-    <header class="sticky-top">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light navBg">
             <div class="container-fluid px-5">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../img/logo.svg" class="w-100" alt="logo">
+                    <img src="../img/logo.svg" class="w-100" alt="Logo Francesco">
                 </a>
                 <button class="navbar-toggler squareColor" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="navText" href="../index.html">Inicio</a>
-                </li>
                 <li class="nav-item">
                     <a class="navText" href="sobremi.html">Sobre mí</a>
                 </li>
@@ -45,87 +42,145 @@
         </nav>
         </header>
 
-        <div>
-            <h1>Servicios</h1>
-            <p>Servicios de marca, diseño, dirección de arte y desarrollo web.</p>
-        </div>
+        <section>
+            <h1 class="top title">Servicios de marca, diseño, dirección de arte y desarrollo web.</h1>
 
         <div class="serviciosBotones">
-            <button class="btn--ux">Diseño UX/UI</button>
-            <button class="btn--brand">Branding</button>
-            <button class="btn--arte">Dirección de arte</button>
-            <button class="btn--web">Desarrollo web</button>
+            <a href="#uxCard"><button class="btn--ux">Diseño UX/UI</button></a>
+            <a href="#brandCard"><button class="btn--brand">Branding</button></a>
+            <a href="#artCard"><button class="btn--arte">Dirección de arte</button></a>
+            <a href="#webCard"><button class="btn--web">Desarrollo web</button></a>
         </div>
+    </section>
 
-        <div class="card mb-3 container mb-5 mt-5">
-            <img src="../img/uxuiServicios.jpg" class="card-img-top" alt="...">
+        <section>
+        <div class="card container mb-5 mt-5" id="uxCard">
+            <div class="picContainer">
+            <img src="../img/uxuiServicios.jpg" class="card-img-top mt-2" alt="Servicios UX/UI">
+        </div>
             <div class="card-body">
                 <h2 class="card-title">Diseño UX/UI</h2>
                 <p class="card-text">El diseño UX es un conjunto de procesos, técnicas, métodos y metodologías, con las  cuales desarrollamos productos digitales o físicos.</p>
             <div class="but">  
-                <button>
-                    Solicítalo aquí
-                </button>
+                <a href="https://api.whatsapp.com/send?phone=+51966435749&text=¡Hola, necesito más información!" target="_blank">
+                    <button>Solicítalo aquí</button>
+                </a>
             </div>
             </div>
         </div>
+    </section>
 
-        <div class="card mb-3 container mb-5">
-            <img src="../img/brandingServicios.jpg" class="card-img-top" alt="...">
+        <section>
+        <div class="card container mb-5" id="brandCard">
+            <div class="picContainer">
+            <img src="../img/brandingServicios.jpg" class="card-img-top mt-2" alt="Servicios Branding">
+        </div>
             <div class="card-body">
                 <h2 class="card-title">Branding</h2>
                 <p class="card-text">El branding, también conocido como gestión de marca, está conformado por un conjunto de acciones relacionadas con el posicionamiento, el propósito y los valores de una marca.</p>
             <div class="but">  
-                <button>
-                    Solicítalo aquí
-                </button>
+                <a href="https://api.whatsapp.com/send?phone=+51966435749&text=¡Hola, necesito más información!" target="_blank">
+                    <button>Solicítalo aquí</button>
+                </a>
             </div>
             </div>
         </div>
+    </section>
 
-    <footer class="footer">
-        <div>
-            <h3 class="footerh3">Servicios</h3>
-            <ul class="footerText">
-                <li>
-                    Diseño UX/UI
-                </li>
-                <li>
-                    Branding
-                </li>
-                <li>
-                    Dirección de arte
-                </li>
-                <li>
-                    Desarrollo web
-                </li>
-            </ul>
+        <section>
+            <div class="card container mb-5" id="artCard">
+            <div class="picContainer">
+            <img src="../img/designCover.jpg" class="card-img-top mt-2" alt="Servicios Dirección de Arte">
         </div>
-            
-        <div>
-            <h3 class="footerh3">Conoce más...</h3>
-            <nav>
+            <div class="card-body">
+                <h2 class="card-title">Dirección de Arte</h2>
+                <p class="card-text">La dirección de arte es una herramienta esencial en cualquier proyecto de comunicación visual. Es la forma en que se construye una estética particular para un propósito.</p>
+            <div class="but">  
+                <a href="https://api.whatsapp.com/send?phone=+51966435749&text=¡Hola, necesito más información!" target="_blank">
+                    <button>Solicítalo aquí</button>
+                </a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="card container mb-5" id="webCard">
+            <div class="picContainer">
+            <img src="../img/webServicios.jpg" class="card-img-top mt-2" alt="Servicios Desarrollo Web">
+        </div>
+            <div class="card-body">
+                <h2 class="card-title">Desarrollo Web</h2>
+                <p class="card-text">Desarrollo web significa construir y mantener sitios web; permite que una web tenga una apariencia impecable, un funcionamiento rápido y un buen desempeño para permitir la mejor experiencia de usuario.</p>
+            <div class="but">  
+                <a href="https://api.whatsapp.com/send?phone=+51966435749&text=¡Hola, necesito más información!" target="_blank">
+                    <button>Solicítalo aquí</button>
+                </a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+        <footer>
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.svg" class="w-100" alt="Logo Francesco">
+            </a>
+            <div>
+                <h3 class="footerh3">Servicios</h3>
                 <ul class="footerText">
                     <li>
-                        <a id="padNone" href="sobremi.html">Sobre mí</a>
+                        <a id="padNone" href="servicios.html">Diseño UX/UI</a>
                     </li>
                     <li>
-                        <a id="padNone" href="proyectos.html">Proyectos</a>
+                        <a id="padNone" href="servicios.html">Branding</a>
                     </li>
                     <li>
-                        <a id="padNone" href="contacto.html">Contacto</a>
+                        <a id="padNone" href="servicios.html">Dirección de arte</a>
                     </li>
-                </ul>    
-            </nav>
-        </div>
-    
-        <div>
-            <p class="footerContact">T. +51 966435749
-            francesco.gq@gmail.com
-    
-            Copyright ©2022 Fran Gq · Diseñador</p>
-        </div>
-        </footer>
+                    <li>
+                        <a id="padNone" href="servicios.html">Desarrollo web</a>
+                    </li>
+                </ul>
+            </div>
+                
+            <div>
+                <h3 class="footerh3">Conoce más...</h3>
+                <nav>
+                    <ul class="footerText">
+                        <li>
+                            <a id="padNone" href="sobremi.html">Sobre mí</a>
+                        </li>
+                        <li>
+                            <a id="padNone" href="proyectos.html">Proyectos</a>
+                        </li>
+                        <li>
+                            <a id="padNone" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>    
+                </nav>
+            </div>
+        
+            <div class="footerCont">
+                <div>
+                <p class="footerContact">
+                    T. +51 966435749
+                    <br>
+                    francesco.gq@gmail.com
+                    <br>
+                    Copyright ©2022 Fran Gq · Diseñador</p>
+                </div>
+                <div class="socialNetworks">
+                    <a href="https://www.facebook.com/francescogq/" target="_blank">
+                    <img src="../img/facebookIcon.png" class="networkIcons" alt="Facebook Icon"></a>
+                    <a href="https://www.instagram.com/francescogq/" target="_blank">
+                    <img src="../img/instagramIcon.png" class="networkIcons" alt="Instagram Icon"></a>
+                    <a href="https://www.linkedin.com/in/francescogrigoletto-brandart/" target="_blank">
+                    <img src="../img/linkedinIcon.png" class="networkIcons" alt="LinkedIn Icon"></a>
+                    <a href="https://api.whatsapp.com/send?phone=+51966435749&text=¡Hola, necesito más información!" target="_blank">
+                    <img src="../img/whatsappIcon.png" class="networkIcons" alt="WhatsApp Icon"></a>
+                </div>
+            </div>
+            </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 

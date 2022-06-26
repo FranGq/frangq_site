@@ -1,16 +1,29 @@
-main{
-    .coverProyectos{
-    background-color: bisque;
-    padding: 24px 8px;
+.coverProyectos{
+    margin: 5rem 16rem;
+    h1{
+        margin-top: 8rem;
+        text-align: center;
     }
-}
+    p{
+        text-align: center;
+    }
+    }
 
 .car{
     padding: 0% 8%;
 }
 
-.introPr{
-    grid-area: introPr;
+#carouselExampleIndicators{
+    display: none;
+    justify-content: center;
+    button{
+        background-color: grey;
+        margin: 100px 16px;
+    }
+    .size{
+        height: 280px;
+        overflow: hidden;
+    }
 }
 
 .bigGrid{
@@ -20,12 +33,9 @@ main{
     grid-template-areas:
     "item1 item1 item2 item2"
     "item1 item1 item3 item4";
-
     grid-gap: 8px;
     justify-items: center;
     align-items: center;
-    padding: 16px 16px 16px 16px;
-    margin: 0px 24px 24px 24px;
 
     .item1{
         display: grid;
@@ -61,65 +71,17 @@ main{
 }
 
 .containerProyectos{
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "header header header header"
-    "main main main main"
-    "mainpr mainpr mainpr mainpr"
-    "footer footer footer footer";
-
-    .moreProyects{
-        display: grid;
-        grid-area: mainpr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
-        grid-template-areas:
-        "pr pr pr pr"
-        "pr2 pr2 pr2 pr2"
-        "pr3 pr3 pr3 pr3"
-        "pr4 pr4 pr4 pr4";
-
-        .pr{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.2fr 0.2fr;
-            grid-template-areas:
-            "introPr introPr introPr introPr"
-            "bigGrid bigGrid bigGrid bigGrid";
-            grid-area: pr;
-        }
-
-        .pr2{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.2fr 0.2fr;
-            grid-template-areas:
-            "introPr introPr introPr introPr"
-            "bigGrid bigGrid bigGrid bigGrid";
-            grid-area: pr2;
-        }
-        
-        .pr3{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.2fr 0.2fr;
-            grid-template-areas:
-            "introPr introPr introPr introPr"
-            "bigGrid bigGrid bigGrid bigGrid";
-            grid-area: pr3;
-        }
-        
-        .pr4{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.2fr 0.2fr;
-            grid-template-areas:
-            "introPr introPr introPr introPr"
-            "bigGrid bigGrid bigGrid bigGrid";
-            grid-area: pr4;
-        }
+    padding: 5rem 8rem;
+    background-color: #f5f2f2;
+    h2{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    p{
+        padding-left: 0;
+        padding-bottom: 2rem;
+    }
+    .pr{
+        margin-bottom: 4rem;
     }
 }

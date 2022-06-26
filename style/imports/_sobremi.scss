@@ -1,0 +1,102 @@
+.hello{
+    display: flex;
+    margin-bottom: 40px;
+    p{
+        text-align: left;
+    }
+}
+
+.franPhoto img{
+    width: 18.75rem;
+    height: 9.375rem;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 16px 0 16px 80px;
+}
+
+.exp{
+    margin: 0 120px 40px 120px;
+    h2{
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+.experience{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 16px;
+}
+
+.cardExp{
+    width: 30%;
+    justify-content: center;
+    border-radius: 0 30%;
+    padding: 40px 28px;
+    color: white;
+    h3{
+        text-align: center;
+        color: white;
+        font-size: larger;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+$bgcard: (
+    1: #fa5514,
+    2: #fb7549,
+    3: #fb9517,
+);
+
+@each $exp, $color in $bgcard {
+    .bg--#{$exp}{
+            background-color: $color;
+        }
+    }
+
+.hab{
+    margin: 0 120px 80px 120px;
+    h2{
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+.chips{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    p{
+        background-color: #e0e0e0;
+        border-radius: 3rem;
+        color: $type2;
+        width: auto;
+        padding: 0.5rem 2rem;
+    }
+}
+
+.part{
+    padding: 40px 120px 40px 120px;
+    background-color: #fb9517;
+    h2{
+        margin-left: 0;
+        color: white;
+    }
+}
+
+.partLogos{
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 32px 0 48px 0;
+    place-items: center;
+    img{
+        width: 60%;
+        opacity: 80%;
+    }
+}

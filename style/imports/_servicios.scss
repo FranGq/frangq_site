@@ -1,3 +1,18 @@
+.top{
+    margin: 120px 120px 0px 120px;
+}
+
+.picContainer{
+    height: 180px;
+    overflow: hidden;
+}
+
+.card-body{
+    .card-text{
+        margin-left: 40px;
+    }
+}
+
 .but{
     display: flex;
     justify-content: flex-end;
@@ -24,10 +39,10 @@
 
 .serviciosBotones{
     margin-top: 2rem;
-    width: 95%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 2rem;
     button{
         margin-bottom: 1rem;
     }

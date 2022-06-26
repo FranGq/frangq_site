@@ -14,20 +14,17 @@
 
 <div class="contain">
 <body>
-    <header class="sticky-top">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light navBg">
             <div class="container-fluid px-5">
                 <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.svg" class="w-100" alt="logo">
+                    <img src="img/logo.svg" class="w-100" alt="Logo Francesco">
                 </a>
                 <button class="navbar-toggler squareColor" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="navText" href="index.html">Inicio</a>
-                </li>
                 <li class="nav-item">
                     <a class="navText" href="secciones/sobremi.html">Sobre mí</a>
                 </li>
@@ -45,30 +42,39 @@
             </div>
         </nav>
         </header>
-   
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active carouselPhoto">
+                <img src="./img/uxuiServicios.jpg" class="d-block w-100" alt="Servicios UX/UI">
+              </div>
+              <div class="carousel-item carouselPhoto">
+                <img src="./img/designCover.jpg" class="d-block w-100" alt="Servicios Diseño">
+              </div>
+              <div class="carousel-item carouselPhoto">
+                <img src="./img/brandingServicios.jpg" class="d-block w-100" alt="Servicios Branding">
+              </div>
+            </div>
+          </div>        
+
     <main class="saludo">
-        <section class="hola">
-            <div class="principal">
-                <h1>¡Hola!</h1>
+        <section class="hola centerTitle">
+                <h1>¡Hola! Te damos la bienvenida.</h1>
                 <p>Desarrollamos proyectos creativos para marcas y emprendimientos. Tenemos en cuenta el pensamiento crítico, la investigación y un enfoque siempre orientado al usuario.</p> 
                 <p>¡Háblanos de tu negocio o marca y empecemos a contruir algo increíble juntos!</p>
                 <a href="secciones/sobremi.html">
                     <button>Conoce más</button>
                 </a>
-            </div>
-            <div class="fotoPrincipal">
-                <figure> 
-                    <img class="francesco" src="img/francesco.jpg" alt="foto francesco">
-                </figure>
-            </div>
         </section>
     </main>
 
     <section class="servicios">
+        <div class="serviciosContent">
         <h2 class="newColor">Servicios</h2>
     <div class="serv">
         <div class="cardServicios">
         <div>
+            <img src="./img/uxuiServicios.jpg" class="d-block w-100 imgServicios" alt="Servicios UX/UI">
             <h3>Diseño UX/UI</h3>
             <p class="serviciosText">El diseño UX es un conjunto de procesos, técnicas, métodos y metodologías, con las  cuales desarrollamos productos digitales o físicos.</p>
         </div>
@@ -76,6 +82,7 @@
         </div>
         <div class="cardServicios">
         <div>
+            <img src="./img/brandingServicios.jpg" class="d-block w-100 imgServicios" alt="Servicios Branding">
             <h3>Branding</h3>
             <p class="serviciosText">El branding, también conocido como gestión de marca, está conformado por un conjunto de acciones relacionadas con el posicionamiento, el propósito y los valores de una marca.</p>
         </div>
@@ -83,6 +90,7 @@
         </div>
         <div class="cardServicios">
         <div>
+            <img src="./img/designCover.jpg" class="d-block w-100 imgServicios" alt="Servicios Diseño">
             <h3>Dirección de arte</h3>
             <p class="serviciosText">La dirección de arte es una herramienta esencial en cualquier proyecto de comunicación visual. Es la forma en que se construye una estética particular para un propósito.</p>
         </div>
@@ -90,87 +98,108 @@
         </div>
         <div class="cardServicios">
         <div>
+            <img src="./img/webServicios.jpg" class="d-block w-100 imgServicios" alt="Servicios Desarrollo web">
             <h3>Desarrollo web</h3>
             <p class="serviciosText">Desarrollo web significa construir y mantener sitios web; permite que una web tenga una apariencia impecable, un funcionamiento rápido y un buen desempeño para permitir la mejor experiencia de usuario.</p>
         </div>
             <a class="conoceMas" href="secciones/servicios.html">Conoce más...</a>
         </div>
     </div>
+</div>
     </section>
 
         <section class="algunosProyectos">
+            <div class="proyectosContent">
             <h2>Algunos proyectos</h2>
             <div class="gridProyectos">
-            <figure>
-                <div class="templates">
-                    <img class="templatesPhoto" src="img/lifebox.jpg" alt="teléfono móvil que muestra la imagen principal del proyecto lifebox">
-                    <figcaption>Proyecto Lifebox</figcaption>
-                </div>
-            </figure>
-            <figure>
-                <div class="templates">
-                    <img class="templatesPhoto" src="img/esikaPro.jpg" alt="teléfono móvil que muestra la imagen principal del proyecto lifebox">
-                    <figcaption>Proyecto Ésika Pro</figcaption>
-                </div>
-            </figure>
-            <figure>
-                <div class="templates">
-                    <img class="templatesPhoto" src="img/magnifique.jpg" alt="teléfono móvil que muestra la imagen principal del proyecto lifebox">
-                    <figcaption>Proyecto Magnifique</figcaption>
-                </div>
-            </figure>
-            <figure>
-                <div class="templates">
-                    <img class="templatesPhoto" src="img/smartfit.jpg" alt="teléfono móvil que muestra la imagen principal del proyecto lifebox">
-                    <figcaption>Proyecto Smartfit</figcaption>
-                </div>
-            </figure>
+                <div class="cardProy">
+                    <img src="./img/lifebox.jpg" alt="Proyecto lifebox" class="image" style="width:100%">
+                    <div class="middle">
+                      <a href="secciones/proyectos.html"><div class="text btn--1">Míralo aquí</div></a>
+                    </div>
+                  </div>
+                  <div class="cardProy">
+                    <img src="./img/esikaPro.jpg" alt="Proyecto Ésika Pro" class="image" style="width:100%">
+                    <div class="middle">
+                      <a href="secciones/proyectos.html"><div class="text btn--2">Míralo aquí</div></a>
+                    </div>
+                  </div>
+                  <div class="cardProy">
+                    <img src="./img/magnifique.jpg" alt="Proyecto Magnifique" class="image" style="width:100%">
+                    <div class="middle">
+                      <a href="secciones/proyectos.html"><div class="text btn--3">Míralo aquí</div></a>
+                    </div>
+                  </div>
+                  <div class="cardProy">
+                    <img src="./img/smartfit.jpg" alt="Proyecto Smartfit" class="image" style="width:100%">
+                    <div class="middle">
+                      <a href="secciones/proyectos.html"><div class="text btn--4">Míralo aquí</div></a>
+                    </div>
+                  </div>   
         </div>
+    </div>
         </section>
 
-    <footer>
-        <div>
-            <h3 class="footerh3">Servicios</h3>
-            <ul class="footerText">
-                <li>
-                    Diseño UX/UI
-                </li>
-                <li>
-                    Branding
-                </li>
-                <li>
-                    Dirección de arte
-                </li>
-                <li>
-                    Desarrollo web
-                </li>
-            </ul>
-        </div>
-            
-        <div>
-            <h3 class="footerh3">Conoce más...</h3>
-            <nav>
+        <footer>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.svg" class="w-100" alt="Logo Francesco">
+            </a>
+            <div>
+                <h3 class="footerh3">Servicios</h3>
                 <ul class="footerText">
                     <li>
-                        <a id="padNone" href="secciones/sobremi.html">Sobre mí</a>
+                        <a id="padNone" href="secciones/servicios.html">Diseño UX/UI</a>
                     </li>
                     <li>
-                        <a id="padNone" href="secciones/proyectos.html">Proyectos</a>
+                        <a id="padNone" href="secciones/servicios.html">Branding</a>
                     </li>
                     <li>
-                        <a id="padNone" href="secciones/contacto.html">Contacto</a>
+                        <a id="padNone" href="secciones/servicios.html">Dirección de arte</a>
                     </li>
-                </ul>    
-            </nav>
-        </div>
-    
-        <div>
-            <p class="footerContact">T. +51 966435749
-            francesco.gq@gmail.com
-    
-            Copyright ©2022 Fran Gq · Diseñador</p>
-        </div>
-        </footer>
+                    <li>
+                        <a id="padNone" href="secciones/servicios.html">Desarrollo web</a>
+                    </li>
+                </ul>
+            </div>
+                
+            <div>
+                <h3 class="footerh3">Conoce más...</h3>
+                <nav>
+                    <ul class="footerText">
+                        <li>
+                            <a id="padNone" href="secciones/sobremi.html">Sobre mí</a>
+                        </li>
+                        <li>
+                            <a id="padNone" href="secciones/proyectos.html">Proyectos</a>
+                        </li>
+                        <li>
+                            <a id="padNone" href="secciones/contacto.html">Contacto</a>
+                        </li>
+                    </ul>    
+                </nav>
+            </div>
+        
+            <div class="footerCont">
+                <div>
+                <p class="footerContact">
+                    T. +51 966435749
+                    <br>
+                    francesco.gq@gmail.com
+                    <br>
+                    Copyright ©2022 Fran Gq · Diseñador</p>
+                </div>
+                <div class="socialNetworks">
+                    <a href="https://www.facebook.com/francescogq/" target="_blank">
+                    <img src="img/facebookIcon.png" class="networkIcons" alt="Facebook Icon"></a>
+                    <a href="https://www.instagram.com/francescogq/" target="_blank">
+                    <img src="img/instagramIcon.png" class="networkIcons" alt="Instagram Icon"></a>
+                    <a href="https://www.linkedin.com/in/francescogrigoletto-brandart/" target="_blank">
+                    <img src="img/linkedinIcon.png" class="networkIcons" alt="LinkedIn Icon"></a>
+                    <a href="https://api.whatsapp.com/send?phone=+51966435749&text=¡Hola, necesito más información!" target="_blank">
+                    <img src="img/whatsappIcon.png" class="networkIcons" alt="WhatsApp Icon"></a>
+                </div>
+            </div>
+            </footer>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

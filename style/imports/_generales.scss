@@ -7,16 +7,29 @@
     color: $color;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+.title{
+    justify-content: center;
+    text-align: center;
+}
+
 h1{
-    @include hs (16px, 40px 0px 0px 40px, $font, 40px, 900, $type1)
+    @include hs (16px, 0px 0px 0px 0px, $font, 40px, 900, $type1)
 }
 
 h2{
-    @include hs (16px, 40px 0px 20px 40px, $font, 32px, 900, $type2)
+    @include hs (16px, 0px 0px 0px 40px, $font, 32px, 900, $type2)
 }
 
 h3{
     @include hs (0px, 0px, $font, 16px, 900, $type2)
+}
+
+.centerTitle{
+    text-align: center;
 }
 
 header{
@@ -49,16 +62,16 @@ button{
     width: fit-content;
     background-color: $buttonOn;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     color: $type2;
-    padding: 15px 32px;
+    padding: 1rem 2rem;
+    margin: 1.5rem 0;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     font-family: $font;
     font-weight: 500;
-    margin-left: 56px;
     cursor: pointer;
     transition-duration: 0.4s;
 
@@ -136,28 +149,27 @@ nav{
 
 p {
     padding: 16px;
-    margin: 8px 40px 8px 40px;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 footer{
     grid-area: footer;
     display: flex;
     justify-content: center;
+    gap: 3rem;
     background-color: $type2;
     margin-bottom: 0px;
     margin-top: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 10% 40px 10%;
 
     .footerh3{
         @extend h3;
         font-size: 20px;
         color: $type1;
         padding: 16px;
-        margin: 20px 0px 20px 40px;
     }
 
     ul{
@@ -183,20 +195,49 @@ footer{
     }
 }
 
+.serviciosBotones{
+    justify-content: center;
+    gap: 1rem;
+    }
+
+footer{
+    .navbar-brand{
+        margin: 16px;
+    }
+}
+
+.footerCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .footerContact{
     font-family: 'Montserrat', sans-serif;
     color: $type3;
-    font-size: 12px;
-    margin-top: 20px;
+    text-align: end;
+    font-size: 16px;
+    font-weight: 400
 }
 
 .footerText{
     font-family: 'Montserrat', sans-serif;
     color: $type3;
     font-size: 16px;
+    padding-left: 0;
     padding-left: 16px;
-    margin: 8px 0px 20px 40px;
     font-weight: 400;
+}
+
+.socialNetworks{
+    display: flex;
+    justify-content: end;
+    padding: 0px 16px;
+    gap: 1rem;
+}
+
+.networkIcons{
+    width: 1.5rem;
 }
 
 .newColor{

@@ -2,9 +2,10 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.43fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "header header header header"
+    "carrusel carrusel carrusel carrusel"
     "saludo saludo saludo saludo"
     "servicios servicios servicios servicios"
     "proyectos proyectos proyectos proyectos"
@@ -13,49 +14,47 @@
 
 header{
     grid-area: header;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 9999;
+    }
+
+.carousel{
+    grid-area: carrusel;
+}
+
+.carouselPhoto{
+    height: 320px;
+    overflow: hidden;
 }
 
 .saludo{
-        background-color: bisque;
         grid-area: saludo;
 }
 
 .hola{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding: 8px;
     gap: 16px;
-    margin: 0px 48px 48px 48px;
+    margin: 3rem 16rem;
     justify-content: center;
-
-    .principal{
-        display: flex;
-        padding-bottom: 40px;
-        flex-direction: column;
-        width: 60%;
-        }
-    }
-
-    .fotoPrincipal{
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        
-        .francesco{
-            width: 300px;
-            margin-left: 16px;
-        }
     }
 
 .servicios{
     grid-area: servicios;
     background-color: chocolate;
+}
+
+.serviciosContent{
+    margin: 5rem 8rem;
+}
 
     .serv{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         padding: 8px;
         gap: 16px;
         margin: 24px 48px 56px 48px;
@@ -67,12 +66,15 @@ header{
             flex: 1 1 200px;
             background-color: $cardsOn;
             border-radius: 8px;
-            padding: 16px;
+            box-shadow: rgba(111, 59, 3, 0.2) 0px 7px 29px 0px;
+
+            h3{
+                margin: 10% 10%;
+            }
 
             &:hover{
                 background-color: $cardsHover;
                 color: $type3;
-                cursor: pointer;
 
                 h3{
                     color: $type1;
@@ -80,12 +82,16 @@ header{
             }
         }
     }
+
+.imgServicios{
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 1rem;
 }
 
 .serviciosText{
-    font-size: 12px;
+    font-size: 14px;
     padding: 0px;
-    margin: 8px 8px 8px 0px;
+    margin: 5% 10%;
 }
 
 .conoceMas{
@@ -93,10 +99,15 @@ header{
         font-family: $font;
         font-weight: 700;
         color: $type1;
+        margin: 5% 10% 10% 10%;
         font-style: italic;
         &:hover{
             color: $type4;
         }
+}
+
+.proyectosContent{
+    margin: 5rem 8rem;
 }
 
 .algunosProyectos{
@@ -105,39 +116,80 @@ header{
     flex-direction: column;
     background-color: #ffd500;
     margin-top: 0px;
-    padding-bottom: 32px;
+    }
 
     .gridProyectos{
         display: grid;
-        margin: 0 2%;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        justify-content: center;
-        gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 8px;
+        margin: 24px 48px 56px 48px;
+    }
 
-        .templates{
-            padding: 8px;
-            margin: 24px;
-
-            .templatesPhoto{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition-timing-function: ease-in;
-                transition-duration: 0.4s;
-
-                &:hover{
-                    transform: scale(1.1);
-                    border: 10px solid #333333
-                }
-            }
-
-            figcaption{
-                font-family: $font;
-                font-size: 12px;
-                font-weight: 900;
-                color: $type2;
+    .cardProy {
+        position: relative;
+        width: 100%;
+        &:hover .image {
+            opacity: 0.3;
+          }
+        &:hover .middle {
+            opacity: 1;
+          }  
+      }
+      
+      .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border-radius: 10px;
+      }
+      
+      .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(50%, -50%);
+        text-align: center;
+        h2{
+            font-size: 24px;
+            margin: 0;
+        }
+      }
+      
+      .text {
+        border-radius: 5px;
+        font-family: $font;
+        font-weight: 500;
+        color: white;
+        font-size: 1rem;
+        padding: 8px 16px;
+      }
+    
+      $textButton: (
+        1: #04AA6D,
+        2: #cf0707,
+        3: #116db8,
+        4: #3a3724,
+    );
+    
+    @each $proy, $color in $textButton {
+        .btn--#{$proy}{
+                background-color: $color;
             }
         }
+    
+      a{
+          text-decoration: none;
+      }
+
+    .item1{
+        background-image: url(../img/lifebox.jpg);
+        background-position: center;
+        background-size: cover;
     }
-}
